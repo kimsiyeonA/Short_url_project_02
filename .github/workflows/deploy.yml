@@ -9,7 +9,7 @@ on:
       - Dockerfile
       - .github/workflows/deploy.yml
     branches:
-      - main    --> 실제 브랜치명으로 변경
+      - main
 jobs:
   deploy:
     name: Deploy app
