@@ -11,7 +11,7 @@ public class HomeController {
     @Value("${custom.site.name}")
     private String customSiteName;
 
-    @Value("${custom.site.name}")
+    @Value("${custom.secret.key}")
     private String secretKey;
 
     @GetMapping("/")
