@@ -5,31 +5,30 @@ spring:
     active: dev
     include: secret
   datasource:
-    #url: jdbc:postgresql://ksyksy-surl-project-db.internal:5432/surl_dev
+    #url: jdbc:postgresql://localhost:5432/surl_dev
     #username: postgres
-    #password: UXtRJYEdJqV07c3
+    #password: koreait123414
     #driver-class-name: org.postgresql.Driver
     url: jdbc:h2:./db_dev;MODE=MySQL
     username: sa
     password:
     driver-class-name: org.h2.Driver
   jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: update
     properties:
       hibernate:
-        default_batch_fetch_size:
-        format_sql: false
-        highlight_sql: false
-        use_sql_comments: false
+        default_batch_fetch_size: 100
+        format_sql: true
+        highlight_sql: true
+        use_sql_comments: true
 logging:
   level:
-    com.koreait.short_url_project_02: INFO
-    org.hibernate.SQL: INFO
-    org.hibernate.orm.jdbc.bind: INFO
-    org.hibernate.orm.jdbc.extract: INFO
-    org.springframework.transaction.interceptor: INFO
+    com.koreait.short_url_project_02: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.orm.jdbc.bind: TRACE
+    org.hibernate.orm.jdbc.extract: TRACE
+    org.springframework.transaction.interceptor: TRACE
 custom:
   site:
     name: "My Site"

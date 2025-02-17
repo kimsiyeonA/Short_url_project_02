@@ -14,7 +14,8 @@ import java.util.Optional;
 @Transactional(readOnly = true)
 public class MemberService {
 
-    private final MemberRepository memberRepository;
+    private final MemberRepository
+            memberRepository;
 
     @Transactional
     public Optional<Member> findByUsername(String username) {
