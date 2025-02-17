@@ -1,4 +1,4 @@
-package com.koreait.short_url_project_02;
+package com.koreait.short_url_project_02.domain.home.home.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
